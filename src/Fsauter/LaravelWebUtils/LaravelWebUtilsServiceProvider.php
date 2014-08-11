@@ -19,6 +19,10 @@ class LaravelWebUtilsServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->package('fsauter/laravel-web-utils');
+
+        // Include utility files.
+        include __DIR__.'/../../utils.php';
+        include __DIR__.'/../../blade.php';
 	}
 
 	/**
@@ -28,7 +32,10 @@ class LaravelWebUtilsServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+        $this->app['resourceLoader'] = $this->app->share(function($app)
+        {
+            return new ResourceLoader;
+        });
 	}
 
 	/**
@@ -38,7 +45,7 @@ class LaravelWebUtilsServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return array('resourceLoader');
 	}
 
 }

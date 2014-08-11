@@ -1,20 +1,26 @@
 {
     "name": "fsauter/laravel-web-utils",
-    "description": "",
+    "description": "A simple collection of useful helpers for laravel.",
+    "license": "MIT",
+    "homepage": "https://github.com/fsauter/laravel-web-utils",
     "authors": [
         {
             "name": "Florian Sauter",
-            "email": "fn.sauter@gmail.com"
+            "email": "fn.sauter@gmail.com",
+            "homepage": "http://fsauter.de"
         }
     ],
+    "support": {
+        "email": "fn.sauter@gmail.com",
+        "issues": "https://github.com/fsauter/laravel-web-utils/issues",
+        "source": "https://github.com/fsauter/laravel-web-utils",
+        "wiki": "https://github.com/fsauter/laravel-web-utils/wiki"
+    },
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "4.2.*"
     },
     "autoload": {
-        "classmap": [
-            "src/migrations"
-        ],
         "psr-0": {
             "Fsauter\\LaravelWebUtils\\": "src/"
         }
