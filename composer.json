@@ -3,6 +3,7 @@
     "description": "A simple collection of useful helpers for laravel.",
     "license": "MIT",
     "homepage": "https://github.com/fsauter/laravel-web-utils",
+    "keywords": ["web", "utils", "laravel"],
     "authors": [
         {
             "name": "Florian Sauter",
