@@ -1,4 +1,4 @@
-<?php namespace Vendor\LaravelWebUtils;
+<?php namespace Fsauter\LaravelWebUtils;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class LaravelWebUtilsServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('vendor/laravel-web-utils');
+		$this->package('fsauter/laravel-web-utils');
 	}
 
 	/**
