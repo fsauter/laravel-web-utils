@@ -16,7 +16,7 @@
             "src/migrations"
         ],
         "psr-0": {
-            "Vendor\\LaravelWebUtils\\": "src/"
+            "Fsauter\\LaravelWebUtils\\": "src/"
         }
     },
     "minimum-stability": "stable"
